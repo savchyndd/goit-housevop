@@ -1,8 +1,11 @@
 :root {
+  --accent-color: #d4c17f;
+
+  --background-color: #242b33;
 }
 /* Global style */
 body {
-  background: #242b33;
+  background: var(--background-color);
 }
 /* Header */
 
