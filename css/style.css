@@ -1,17 +1,130 @@
 :root {
+  --black-color: #000000;
+  --white-color: #ffffff;
   --accent-color: #d4c17f;
 
   --background-color: #242b33;
 }
 /* Global style */
 body {
+  font-family: 'Raleway', sans-serif;
+  color: var(--white-color);
   background: var(--background-color);
 }
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display';
+  color: var(--accent-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.section {
+  padding: 88px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 /* Header */
-
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+}
+.nav-link:hover,
+.nav-link:focus,
+.subnav-link:hover,
+.subnav-link:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.nav-link {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+}
+.subnav-link {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+}
 /* Hero Section */
+.hero-container {
+  text-align: center;
+}
+.hero-title {
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 556px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.33;
+}
+
+.mouse-icon {
+  margin-bottom: 200px;
+}
+
+.hero-address {
+  display: flex;
+  justify-content: space-between;
+  max-width: 556px;
+  margin: auto;
+}
+.address-link {
+  font-size: 18px;
+  line-height: 1.16;
+}
+.address-icon {
+  margin-right: 4px;
+  fill: currentColor;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
 
 /* Feature Section */
+.feature-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.feature-item:not(:last-child) {
+  margin-right: 64px;
+}
+.feature-icon {
+  margin-bottom: 54px;
+}
+.feature-text {
+  max-width: 154px;
+
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.35;
+}
 
 /* Appartments Section */
 
@@ -25,4 +138,4 @@ body {
 
 /* Call to action form Section */
 
-/* Footer */
+/* Footer */ ;
