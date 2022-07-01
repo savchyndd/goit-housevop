@@ -39,7 +39,7 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="section">
+      <section class="section hero-section">
         <div class="container hero-container">
           <h1 class="hero-title">Житловий комплекс в історичному центрі</h1>
           <svg class="mouse-icon" width="40" height="40" aria-hidden="true">
@@ -96,11 +96,11 @@
       <!-- Appartments section -->
       <section class="section">
         <div class="container">
-          <h2>Наші квартири</h2>
-          <ul class="appart-lists">
-            <li class="appart-list">
+          <h2 class="appartments-title">Наші квартири</h2>
+          <ul class="appart-list">
+            <li class="appart-item">
               <img
-                src="./img/loft3.jpg"
+                src="./img/loft1.jpg"
                 alt="Стандарт"
                 class="appart-img"
                 width="535"
@@ -108,7 +108,7 @@
               />
               <p class="appart-text">Стандарт - 1 поверх</p>
             </li>
-            <li class="appart-list">
+            <li class="appart-item">
               <img
                 src="./img/loft2.jpg"
                 alt="Комфорт"
@@ -118,11 +118,11 @@
               />
               <p class="appart-text">Комфорт - 2 поверхи</p>
             </li>
-            <li class="appart-list">
-              <img src="./img/loft3.jpg" alt="Люкс" class="appart-img" width="535" height="320" />
+            <li class="appart-item">
+              <img src="./img/loft1.jpg" alt="Люкс" class="appart-img" width="535" height="320" />
               <p class="appart-text">Люкс - 3 поверхи</p>
             </li>
-            <li class="appart-list">
+            <li class="appart-item">
               <img
                 src="./img/loft2.jpg"
                 alt="Супер Люкс"
@@ -138,8 +138,8 @@
       <!-- Prices section -->
       <section class="section">
         <div class="container">
-          <h2>Ціни</h2>
-          <table>
+          <h2 class="prices-title">Ціни</h2>
+          <table class="prices-table">
             <caption>
               Каталог типів квартир за ціною
             </caption>
@@ -185,8 +185,8 @@
       <!-- Call to action section -->
       <section class="section">
         <div class="container">
-          <h2>Хочете подивитися?</h2>
-          <p>
+          <h2 class="cta-title">Хочете подивитися?</h2>
+          <p class="cta-decr">
             Житловий комплекс в історичному центрі міста HouseVOP завершив будівництво та здав
             об’єкт в експлаутацію <time datetime="2021-03-11">11 березня 2021</time> року. Якщо ви
             маєте бажання подивитися квартиру, чекаємо на Вас. Тут просто повинен бути будь-який
@@ -197,12 +197,37 @@
           <div class="form-container">
             <form action="#" class="form">
               <div class="form-field">
-                <label for="user-name" class="field-name">Ім'я</label>
-                <input required type="text" class="field-input" id="user-name" name="Ваше ім'я" />
+                <label for="user-name" class="field-name">Введіть ім’я *</label>
+                <input
+                  required
+                  type="text"
+                  class="field-input"
+                  id="user-name"
+                  name="Ваше ім'я"
+                  placeholder="Тарас"
+                />
               </div>
               <div class="form-field">
-                <label for="user-tel" class="field-name">Телефон</label>
-                <input required type="tel" class="field-input" id="user-tel" name="Ваш телефон" />
+                <label for="user-email" class="field-name">Введіть e-mail *</label>
+                <input
+                  required
+                  type="email"
+                  class="field-input"
+                  id="user-email"
+                  name="Ваш електронний адрес"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+              <div class="form-field">
+                <label for="user-tel" class="field-name">Введіть телефон</label>
+                <input
+                  required
+                  type="tel"
+                  class="field-input"
+                  id="user-tel"
+                  name="Ваш телефон"
+                  placeholder="068 354 44 81"
+                />
               </div>
               <button class="form-btn">Подивитися район</button>
             </form>
@@ -246,11 +271,25 @@
           <form action="#" class="form">
             <div class="form-field">
               <label for="user-name" class="field-name">Ім'я</label>
-              <input required type="text" class="field-input" id="user-name" name="Ваше ім'я" />
+              <input
+                required
+                type="text"
+                class="field-input"
+                id="user-name"
+                name="Ваше ім'я"
+                placeholder="Ваше ім'я"
+              />
             </div>
             <div class="form-field">
               <label for="user-tel" class="field-name">Телефон</label>
-              <input required type="tel" class="field-input" id="user-tel" name="Ваш телефон" />
+              <input
+                required
+                type="tel"
+                class="field-input"
+                id="user-tel"
+                name="Ваш телефон"
+                placeholder="Ваш телефон"
+              />
             </div>
             <button class="form-btn">Подивитися район</button>
           </form>
