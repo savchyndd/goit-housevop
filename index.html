@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HouseVOP</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,10 +30,22 @@
     <main>
       <section>
         <h1>Житловий комплекс в історичному центрі</h1>
-        <img src="./img/mouse.svg" alt="Мишка" />
+        <svg class="mouse-icon" width="40" height="40" aria-hidden="true">
+          <use href="./img/icon-housevop.svg#icon-mouse"></use>
+        </svg>
         <address>
-          <a href="https://goo.gl/maps/etuPxoapC1qAqdJL9" class="address-link">вул. Садова 10-15</a>
-          <a href="tel:+380684575467" class="address-link">+380 (68) 45-75-467</a>
+          <a href="https://goo.gl/maps/etuPxoapC1qAqdJL9" class="address-link">
+            <svg class="address-icon" width="21" height="21" aria-hidden="true">
+              <use href="./img/icon-housevop.svg#icon-placeholder"></use>
+            </svg>
+            вул. Садова 10-15</a
+          >
+          <a href="tel:+380684575467" class="address-link">
+            <svg class="address-icon" width="21" height="21" aria-hidden="true">
+              <use href="./img/icon-housevop.svg#icon-phone"></use>
+            </svg>
+            +380 (68) 45-75-467</a
+          >
         </address>
       </section>
       <section>
@@ -189,7 +200,7 @@
       </section>
     </main>
     <footer>
-      <a href="#" class="logo"><img src="./img/logo.svg" alt="Логотип" /></a>
+      <a href="#" class="logo"><img src="./img/logo.png" alt="Логотип" /></a>
       <p>&copy; 2022 Всі права захищені. HouseVOP</p>
       <ul class="footer-lists first-list">
         <li class="footer-list"><a href="#" class="footer-link">Про комплекс</a></li>
